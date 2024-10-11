@@ -1,8 +1,9 @@
 name: schedule print time
 
 on:
-  schedule:
-    - cron: '*/2 * * * *'
+  push:
+    branches:
+      - main
 
 jobs:
   hello_world:
